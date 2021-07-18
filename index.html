@@ -5,9 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="container">
+        <div class="input-section">
+            <div class="input-section__bill-people">
+                <p class="input-section__heading">Bill</p>
+                <div class="input-section__input">
+                    <img src="/images/icon-dollar.svg" alt="">
+                    <input class="input-number" type="text">
+                </div>
+            </div>
+            <div class="input-section__tip">
+                <p class="input-section__heading">Select Tip %</p>
+                <div class="input-section__selection">
+                    <div class="percent">5%</div>
+                    <div class="percent">10%</div>
+                    <div class="percent">15%</div>
+                    <div class="percent">25%</div>
+                    <div class="percent">50%</div>
+                    <div class="percent">Custom</div>
+                </div>
+            </div>
+            <div class="input-section__bill-people">
+                <p class="input-section__heading">Number of People</p>
+                <div class="input-section__input">
+                    <img src="/images/icon-person.svg" alt="">
+                    <input class="input-number" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="display-section">
+            <div class="display-section__price">
+                <div class="display-section__price--calculation">
+                    <div class="price-calculation__heading">
+                        <p class="price-calculation__heading--big">Tip Amount</p>
+                        <p class="price-calculation__heading--small">/ person</p>
+                    </div>
+                    <div class="price-calculation__number">$4.27</div>
+                </div>
+                <div class="display-section__price--calculation">
+                    <div class="price-calculation__heading">
+                        <p class="price-calculation__heading--big">Total</p>
+                        <p class="price-calculation__heading--small">/ person</p>
+                    </div>
+                    <div class="price-calculation__number">$4.27</div>
+                </div>
+            </div>
+            <div class="display-section__btn">RESET</div>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
